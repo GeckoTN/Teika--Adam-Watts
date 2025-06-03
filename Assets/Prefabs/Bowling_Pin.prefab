@@ -10,6 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2745335594713523420}
   - component: {fileID: 5479787653890083722}
+  - component: {fileID: 5714358440851090903}
+  - component: {fileID: 1651077455171291631}
   m_Layer: 0
   m_Name: Bowling_Pin
   m_TagString: Untagged
@@ -25,7 +27,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2015608598625985848}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0.0000012665986, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 4, z: 0}
   m_LocalScale: {x: 0.6, y: 0.6, z: 0.39996}
   m_ConstrainProportionsScale: 1
@@ -87,3 +89,98 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &5714358440851090903
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2015608598625985848}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 0
+--- !u!60 &1651077455171291631
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2015608598625985848}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.97999996, y: 1.0999999}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.084093615, y: 0.5664459}
+      - {x: -0.084877685, y: 0.5600001}
+      - {x: -0.22942463, y: 0.42946064}
+      - {x: -0.27234322, y: 0.29750597}
+      - {x: -0.20779607, y: 0.17194103}
+      - {x: -0.43173948, y: 0.005728159}
+      - {x: -0.49322283, y: -0.11189924}
+      - {x: -0.48999992, y: -0.26499993}
+      - {x: -0.39045328, y: -0.36553958}
+      - {x: -0.26661745, y: -0.40213206}
+      - {x: -0.19012226, y: -0.5371079}
+      - {x: 0.17000002, y: -0.5499999}
+      - {x: 0.2659251, y: -0.40646914}
+      - {x: 0.35974532, y: -0.38156292}
+      - {x: 0.47421587, y: -0.27033082}
+      - {x: 0.5064458, y: -0.19297875}
+      - {x: 0.5032235, y: -0.109043114}
+      - {x: 0.4334018, y: 0.00983512}
+      - {x: 0.20829907, y: 0.15857515}
+      - {x: 0.26980582, y: 0.27240467}
+      - {x: 0.23843196, y: 0.42587036}
+  m_UseDelaunayMesh: 0
