@@ -3,7 +3,8 @@ using UnityEngine;
 public class PlayerBehaviour : MonoBehaviour
 {
     public float speed;
-    public GameObject ball;
+    public GameObject[] balls;
+    public GameObject currentBall;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -26,17 +27,20 @@ public class PlayerBehaviour : MonoBehaviour
             transform.position = newPosition;
         }
 
-        if (ball != null) {
+        if (currentBall != null) {
             Vector3 ballOffset = new Vector3(0f, -1f, 0f);
-            ball.transform.position = transform.position + ballOffset;
-            ball.GetComponent<PolygonCollider2D>().enabled = false;
-            ball.GetComponent<Rigidbody2D>().gravityScale = 0f;
+            currentBall.transform.position = transform.position + ballOffset;
+            currentBall.GetComponent<Collider2D>().enabled = false;
+            currentBall.GetComponent<Rigidbody2D>().gravityScale = 0f;
+        } else {
+            int index = Random.Range(0,balls.Length);
+            currentBall = Instantiate(balls[index], transform.position, Quaternion.identity);
         }
 
         if (Input.GetKeyDown(KeyCode.Space)) {
-            ball.GetComponent<PolygonCollider2D>().enabled = true;
-            ball.GetComponent<Rigidbody2D>().gravityScale = 1f;
-            ball = null;
+            currentBall.GetComponent<Collider2D>().enabled = true;
+            currentBall.GetComponent<Rigidbody2D>().gravityScale = 1f;
+            currentBall = null;
         }
         }
     }
