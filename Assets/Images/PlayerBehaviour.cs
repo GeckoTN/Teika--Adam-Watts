@@ -5,6 +5,8 @@ public class PlayerBehaviour : MonoBehaviour
     public float speed;
     public GameObject[] balls;
     public GameObject currentBall;
+    public GameObject gameOver;
+    
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -15,6 +17,7 @@ public class PlayerBehaviour : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         if (Input.GetAxis("Horizontal") < 0){
             Vector3 newPosition = transform.position;
             newPosition.x = newPosition.x - (speed/60);
@@ -25,6 +28,7 @@ public class PlayerBehaviour : MonoBehaviour
             Vector3 newPosition = transform.position;
             newPosition.x = newPosition.x + (speed/60);
             transform.position = newPosition;
+        }
         }
 
         if (currentBall != null) {
@@ -42,6 +46,10 @@ public class PlayerBehaviour : MonoBehaviour
             currentBall.GetComponent<Rigidbody2D>().gravityScale = 1f;
             currentBall = null;
         }
-        }
+        
+    }
+
+    public void GameOver() {
+        gameOver.SetActive(true);
     }
 }
