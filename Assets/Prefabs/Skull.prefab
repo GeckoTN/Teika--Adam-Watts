@@ -336,6 +336,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Skull
       objectReference: {fileID: 0}
+    - target: {fileID: 2201602641639378836, guid: d1281d9b0702c48dba7bf10755e7f95f, type: 3}
+      propertyPath: ballType
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 2351088565632522129, guid: d1281d9b0702c48dba7bf10755e7f95f, type: 3}
       propertyPath: m_Radius
       value: 1.9028134

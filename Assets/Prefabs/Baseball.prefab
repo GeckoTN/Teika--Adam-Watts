@@ -12,6 +12,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Baseball
       objectReference: {fileID: 0}
+    - target: {fileID: 2201602641639378836, guid: d1281d9b0702c48dba7bf10755e7f95f, type: 3}
+      propertyPath: ballType
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2745335594713523420, guid: d1281d9b0702c48dba7bf10755e7f95f, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.8
