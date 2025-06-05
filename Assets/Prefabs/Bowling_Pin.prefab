@@ -197,6 +197,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0faceb8d07784437aab3fbb6d754b6b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeout: 5
+  timeout: 10
   timeStart: 0
   timeThusFar: 0
+  balls: []
+  ballType: 0

@@ -30,6 +30,7 @@ public class BallBehavior : MonoBehaviour
 
             if (ballType == otherObjectType && ballType != 10) {
                 if (transform.position.x > otherObject.transform.position.x || (transform.position.y > otherObject.transform.position.y && transform.position.x == otherObject.transform.position.x)) {
+                    GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerBehaviour>().UpdateScore(ballType);
                     GameObject newBall =
                         Instantiate(balls[ballType+1], Vector3.Lerp(transform.position, otherObject.transform.position, 0.5f),Quaternion.identity);
                     newBall.GetComponent<Collider2D>().enabled = true;
