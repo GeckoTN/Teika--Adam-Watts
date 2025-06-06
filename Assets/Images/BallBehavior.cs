@@ -55,6 +55,7 @@ public class BallBehavior : MonoBehaviour
             
     }
 
+    
     public void OnTriggerStay2D(Collider2D collision) {
         string tag = collision.gameObject.tag;
         if (tag.Equals("Top")) {

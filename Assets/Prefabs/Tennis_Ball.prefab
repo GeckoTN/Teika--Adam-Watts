@@ -30,11 +30,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2745335594713523420, guid: d1281d9b0702c48dba7bf10755e7f95f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.875
+      value: 5.7391376
       objectReference: {fileID: 0}
     - target: {fileID: 2745335594713523420, guid: d1281d9b0702c48dba7bf10755e7f95f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.658
+      value: -0.1883406
       objectReference: {fileID: 0}
     - target: {fileID: 2745335594713523420, guid: d1281d9b0702c48dba7bf10755e7f95f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -72,6 +72,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 488903730692909379, guid: 2a15fdac0f30648fbaedc4355a9d32ee, type: 3}
+    - target: {fileID: 5714358440851090903, guid: d1281d9b0702c48dba7bf10755e7f95f, type: 3}
+      propertyPath: m_Mass
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5714358440851090903, guid: d1281d9b0702c48dba7bf10755e7f95f, type: 3}
       propertyPath: m_Material
       value: 
@@ -124,5 +128,5 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.00867742, y: 0.008677722}
-  m_Radius: 0.5373548
+  m_Offset: {x: 0.0024311247, y: 0.008677706}
+  m_Radius: 0.46239936
