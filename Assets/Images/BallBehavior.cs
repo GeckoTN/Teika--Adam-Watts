@@ -48,7 +48,7 @@ public class BallBehavior : MonoBehaviour
     public void OnTriggerEnter2D(Collider2D collision) {
         string tag = collision.gameObject.tag;
         Debug.Log("Ball entered trigger " + collision.gameObject.name);
-        if (collision.gameObject.CompareTag("top")) {
+        if (collision.gameObject.CompareTag("Top")) {
             Debug.Log("Game Over Timer started at " + timeStart);
             timeStart = Time.time;
         }
